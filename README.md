@@ -2,7 +2,7 @@
 
 ![Auditbytez Final Output](final_output.png)
 
-This repository houses the design, control architecture, and technical implementation of the **Auditbytez GRC Production Studio** (authored by `📸 Subhodeep Sinha`). 
+This repository houses the design, control architecture, and technical implementation of the **Auditbytez GRC Production Studio** (authored by `Subhodeep Sinha`). 
 
 From an operational risk and system architecture perspective, this project serves as a case study in **Applied AI Governance**. It demonstrates how to deploy probabilistic Large Language Models (LLMs) inside a strictly bounded, deterministic pipeline to safely automate the generation of compliance-related content without exposing sensitive organizational metadata to public networks.
 
