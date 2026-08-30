@@ -1,16 +1,16 @@
-# Applied AI Governance & Operational Risk Case Study: AuditBytez GRC Production Studio
+# Applied AI Governance Case Study: Auditbytez GRC Production Studio
 
-![AuditBytez Final Output](final_output.png)
+![Auditbytez Final Output](final_output.png)
 
-This repository houses the design, control architecture, and technical implementation of the **AuditBytez GRC Production Studio** (authored by `Subhodeep Sinha`). 
+This repository houses the design, control architecture, and technical implementation of the **Auditbytez GRC Production Studio** (authored by `📸 Subhodeep Sinha`). 
 
-From an operational risk and system architecture perspective, this project serves as a case study in **Applied AI Governance**. It demonstrates how to deploy probabilistic Large Language Models (LLMs) inside a strictly bounded, deterministic pipeline to safely automate the generation of compliance-related content without exposing sensitive organisational metadata to public networks.
+From an operational risk and system architecture perspective, this project serves as a case study in **Applied AI Governance**. It demonstrates how to deploy probabilistic Large Language Models (LLMs) inside a strictly bounded, deterministic pipeline to safely automate the generation of compliance-related content without exposing sensitive organizational metadata to public networks.
 
 ---
 
 ## 1. Executive Summary
 
-Traditional public LLM configurations present severe operational risks to enterprise environments, notably **data exfiltration** (via public API endpoints) and **process drift** (due to unbounded model outputs). The **AuditBytez Studio** addresses these hazards by implementing a **privacy-first, locally hosted production pipeline** designed to translate complex GRC frameworks (such as SOC 1, SOC 2, ISO 27001, and GDPR) into structured educational video scripts and visual cues.
+Traditional public LLM configurations present severe operational risks to enterprise environments, notably **data exfiltration** (via public API endpoints) and **process drift** (due to unbounded model outputs). The **Auditbytez Studio** addresses these hazards by implementing a **privacy-first, locally hosted production pipeline** designed to translate complex GRC frameworks (such as SOC 1, SOC 2, ISO 27001, and GDPR) into structured educational video scripts and visual cues.
 
 To mitigate the inherent unreliability of generative models, this architecture integrates **active grounding** (scraping live market data) and enforces strict **Control Tollgates**. Rather than granting the LLM unmonitored execution authority, the system locks the generation process behind a multi-stage **Human-in-the-Loop (HITL)** approval gate, ensuring all final scripts, audio outputs, and visual prompts meet rigorous accuracy and safety standards before deployment.
 
@@ -52,13 +52,13 @@ This matrix maps identified AI execution risks to their corresponding system con
 
 ## 4. Technical Stack & Security Posture
 
-The AuditBytez studio operates under a tight operational risk envelope defined by the following stack and control layout:
+The Auditbytez studio operates under a tight operational risk envelope defined by the following stack and control layout:
 
 ### Technical Stack
-*   **UI Framework**: Streamlit (Bespoke Wine & Crimson studio theme)
-*   **Inference Engine**: Llama-3 8B (Running offline via LM Studio)
-*   **Audio Synthesis**: Asynchronous `edge-tts` (Configured to stable, human-verified neural voices `en-US-AndrewNeural` and `en-US-AvaNeural`)
-*   **Grounding Module**: `youtube-search-python` (Market grounding engine)
+*   **UI & State Management**: Streamlit (Custom state-preserving dashboard with strict HITL gating).
+*   **Inference Engine**: Local Offline LLM (e.g., Llama-3 8B via LM Studio) ensuring zero data exfiltration.
+*   **Audio Synthesis**: Asynchronous Text-to-Speech (edge-tts) utilizing stable, pre-approved neural models.
+*   **Market Grounding**: Live Search API Integration (youtube-search-python) to inject real-world telemetry into the prompting phase.
 
 ### Security and Network Posture
 *   **Zero Data Exfiltration**: By routing all model prompts to `localhost` or local subnets, the system ensures zero compliance metadata leaks to third-party model providers.
@@ -69,7 +69,7 @@ The AuditBytez studio operates under a tight operational risk envelope defined b
 
 ## 5. Conclusion
 
-Deploying AI systems inside production pipelines requires transitioning from probabilistic uncertainty to deterministic reliability. By framing the workflow around structured parsing fallbacks, dynamic network discovery, and human-centric feedback loops, the **AuditBytez GRC Production Studio** illustrates how organizations can capture the efficiencies of local Large Language Models without sacrificing corporate security or governance frameworks.
+Deploying AI systems inside production pipelines requires transitioning from probabilistic uncertainty to deterministic reliability. By framing the workflow around structured parsing fallbacks, dynamic network discovery, and human-centric feedback loops, the **Auditbytez GRC Production Studio** illustrates how organizations can capture the efficiencies of local Large Language Models without sacrificing corporate security or governance frameworks.
 
 ---
 &copy; 2026 Subhodeep Sinha. All rights reserved.
