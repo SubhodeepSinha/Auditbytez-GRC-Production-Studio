@@ -1,3 +1,5 @@
+![AuditBytez Final Output](final_output.png)
+
 # Applied AI Governance & Operational Risk Case Study: AuditBytez Autonomous GRC Studio
 
 This repository houses the design, control architecture, and technical implementation of the **AuditBytez Autonomous GRC Production Studio** (authored by `📸 picxell_world`). 
@@ -68,3 +70,6 @@ The AuditBytez studio operates under a tight operational risk envelope defined b
 ## 5. Conclusion
 
 Deploying AI systems inside production pipelines requires transitioning from probabilistic uncertainty to deterministic reliability. By framing the workflow around structured parsing fallbacks, dynamic network discovery, and human-centric feedback loops, the **AuditBytez GRC Production Studio** illustrates how organizations can capture the efficiencies of local Large Language Models without sacrificing corporate security or governance frameworks.
+
+---
+&copy; 2026 Subhodeep Sinha. All rights reserved.
