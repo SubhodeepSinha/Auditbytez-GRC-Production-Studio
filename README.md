@@ -63,7 +63,6 @@ The Auditbytez studio operates under a tight operational risk envelope defined b
 ### Security and Network Posture
 *   **Zero Data Exfiltration**: By routing all model prompts to `localhost` or local subnets, the system ensures zero compliance metadata leaks to third-party model providers.
 *   **Subnet Resiliency (ipconfig.py)**: To avoid hardcoding IP configurations (which compromises network configuration auditing), the system utilizes a concurrent `ThreadPoolExecutor` scan across `/24` Wi-Fi subnets to locate the local LM Studio instance dynamically.
-*   **Pen-and-Paper Cues**: The visual generator enforces a non-human camera framing constraint (no human faces, no speakers). The camera focus is strictly restricted to high-contrast whiteboards and note blocks to eliminate deepfake and synthetic media liability risks.
 
 ---
 
