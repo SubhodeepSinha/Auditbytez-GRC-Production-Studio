@@ -18,12 +18,12 @@ To mitigate the inherent unreliability of generative models, this architecture i
 ## 🎬 System Demos & Walkthroughs
 
 ### Phase 2: Final Build & AI Governance Demo
-**[![Phase 2 Demo]]**(https://youtu.be/9lrRowZ19qc))
-*Click the link above to watch the finalised production pipeline featuring HITL tollgates, live market grounding, and the bespoke studio UI.*
+[![Phase 2 Demo](https://img.youtube.com/vi/9lrRowZ19qc/maxresdefault.jpg)](https://youtu.be/9lrRowZ19qc)
+*Click the image above to watch the finalised production pipeline featuring HITL tollgates, live market grounding, and the bespoke studio UI.*
 
 ### Phase 1: Initial Prototype
-[![Phase 1 Demo]](https://youtu.be/OXhRf2HPALI)
-*Click the link above to watch the early proof-of-concept focusing on local Llama-3 inference and foundational script automation.*
+[![Phase 1 Demo](https://img.youtube.com/vi/OXhRf2HPALI/maxresdefault.jpg)](https://youtu.be/OXhRf2HPALI)
+*Click the image above to watch the early proof-of-concept focusing on local Llama-3 inference and foundational script automation.*
 ---
 
 ## 2. System Architecture & Control Flow
