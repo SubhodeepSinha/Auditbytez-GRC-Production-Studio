@@ -1,8 +1,8 @@
-# Applied AI Governance Case Study: Auditbytez GRC Production Studio
-
 ![Auditbytez Final Output](final_output.png)
 
-This repository houses the design, control architecture, and technical implementation of the **Auditbytez GRC Production Studio** (authored by `Subhodeep Sinha`). 
+# Applied AI Governance Case Study: Auditbytez GRC Production Studio
+
+This repository houses the design, control architecture, and technical implementation of the **Auditbytez GRC Production Studio** (authored by `📸 picxell_world`). 
 
 From an operational risk and system architecture perspective, this project serves as a case study in **Applied AI Governance**. It demonstrates how to deploy probabilistic Large Language Models (LLMs) inside a strictly bounded, deterministic pipeline to safely automate the generation of compliance-related content without exposing sensitive organizational metadata to public networks.
 
@@ -14,16 +14,6 @@ Traditional public LLM configurations present severe operational risks to enterp
 
 To mitigate the inherent unreliability of generative models, this architecture integrates **active grounding** (scraping live market data) and enforces strict **Control Tollgates**. Rather than granting the LLM unmonitored execution authority, the system locks the generation process behind a multi-stage **Human-in-the-Loop (HITL)** approval gate, ensuring all final scripts, audio outputs, and visual prompts meet rigorous accuracy and safety standards before deployment.
 
----
-## 🎬 System Demos & Walkthroughs
-
-### Phase 2: Final Build & AI Governance Demo
-[![Phase 2 Demo](https://img.youtube.com/vi/9lrRowZ19qc/maxresdefault.jpg)](https://youtu.be/9lrRowZ19qc)
-*Click the image above to watch the finalised production pipeline featuring HITL tollgates, live market grounding, and the bespoke studio UI.*
-
-### Phase 1: Initial Prototype
-[![Phase 1 Demo](https://img.youtube.com/vi/OXhRf2HPALI/maxresdefault.jpg)](https://youtu.be/OXhRf2HPALI)
-*Click the image above to watch the early proof-of-concept focusing on local Llama-3 inference and foundational script automation.*
 ---
 
 ## 2. System Architecture & Control Flow
@@ -46,6 +36,18 @@ graph TD
     F --> G[edge-tts Audio Output]:::standard
     F --> H[6-point Visual Prompts Output]:::standard
 ```
+
+---
+
+## 🎬 System Demos & Walkthroughs
+
+### Phase 2: Final Build & AI Governance Demo
+[![Phase 2 Demo](https://img.youtube.com/vi/9lrRowZ19qc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9lrRowZ19qc)
+*Click the image above to watch the finalized production pipeline featuring HITL tollgates, live market grounding, and the bespoke studio UI.*
+
+### Phase 1: Initial Prototype
+[![Phase 1 Demo](https://img.youtube.com/vi/OXhRf2HPALI/maxresdefault.jpg)](https://www.youtube.com/watch?v=OXhRf2HPALI)
+*Click the image above to watch the early proof-of-concept focusing on local Llama-3 inference and foundational script automation.*
 
 ---
 
@@ -73,6 +75,7 @@ The Auditbytez studio operates under a tight operational risk envelope defined b
 ### Security and Network Posture
 *   **Zero Data Exfiltration**: By routing all model prompts to `localhost` or local subnets, the system ensures zero compliance metadata leaks to third-party model providers.
 *   **Subnet Resiliency (ipconfig.py)**: To avoid hardcoding IP configurations (which compromises network configuration auditing), the system utilizes a concurrent `ThreadPoolExecutor` scan across `/24` Wi-Fi subnets to locate the local LM Studio instance dynamically.
+*   **Pen-and-Paper Cues**: The visual generator enforces a non-human camera framing constraint (no human faces, no speakers). The camera focus is strictly restricted to high-contrast whiteboards and note blocks to eliminate deepfake and synthetic media liability risks.
 
 ---
 
