@@ -39,7 +39,7 @@ graph TD
 
 ---
 
-## 🎬 System Demos & Walkthroughs
+## 🎬 System Demos
 
 ### Phase 2: Final Build & AI Governance Demo
 [![Phase 2 Demo](https://img.youtube.com/vi/9lrRowZ19qc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9lrRowZ19qc)
