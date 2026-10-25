@@ -15,6 +15,16 @@ Traditional public LLM configurations present severe operational risks to enterp
 To mitigate the inherent unreliability of generative models, this architecture integrates **active grounding** (scraping live market data) and enforces strict **Control Tollgates**. Rather than granting the LLM unmonitored execution authority, the system locks the generation process behind a multi-stage **Human-in-the-Loop (HITL)** approval gate, ensuring all final scripts, audio outputs, and visual prompts meet rigorous accuracy and safety standards before deployment.
 
 ---
+## 🎬 System Demos & Walkthroughs
+
+### Phase 2: Final Build & AI Governance Demo
+[![Phase 2 Demo]]([https://www.youtube.com/watch?v=YOUR_PHASE2_VIDEO_ID](https://youtu.be/9lrRowZ19qc))
+*Click the image above to watch the finalized production pipeline featuring HITL tollgates, live market grounding, and the bespoke studio UI.*
+
+### Phase 1: Initial Prototype
+[![Phase 1 Demo]](https://youtu.be/OXhRf2HPALI)
+*Click the image above to watch the early proof-of-concept focusing on local Llama-3 inference and foundational script automation.*
+---
 
 ## 2. System Architecture & Control Flow
 
